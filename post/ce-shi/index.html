@@ -1,104 +1,129 @@
+
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-<meta name="description" content="" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+<meta charset="utf-8" >
+
 <title>测试 | X Space</title>
+<meta name="description" content="">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
 <link rel="shortcut icon" href="https://ellensun815.github.io/favicon.ico">
 <link rel="stylesheet" href="https://ellensun815.github.io/styles/main.css">
 
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
 
 
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://ellensun815.github.io">
-  <img class="avatar" src="https://ellensun815.github.io/images/avatar.png" alt="" width="80px" height="80px">
-  </a>
-  <h1 class="site-title">
-    X Space
-  </h1>
-  <p class="site-description">
-    
-  </p>
-  <div class="menu-container">
-    
-      
-        <a href="https://ellensun815.github.io" class="menu">
-          首页
-        </a>
-      
-    
-      
-        <a href="https://ellensun815.github.io/archives" class="menu">
-          归档
-        </a>
-      
-    
-      
-        <a href="https://ellensun815.github.io/tags" class="menu">
-          标签
-        </a>
-      
-    
-      
-        <a href="https://ellensun815.github.io/post/about/" class="menu">
-          关于
-        </a>
-      
-    
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://ellensun815.github.io">
+        <img class="avatar" src="https://ellensun815.github.io/images/avatar.png" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://ellensun815.github.io">
+        <h1 class="site-title">X Space</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
   </div>
 </div>
 
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
       
+        
+          <a href="https://ellensun815.github.io" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="https://ellensun815.github.io/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="https://ellensun815.github.io/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="https://ellensun815.github.io/post/about/" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
         <div class="post-detail">
-          <article class="post">
-            <h2 class="post-title">
-              测试
-            </h2>
-            <div class="post-info">
-              <time class="post-time">
-                · 2019-03-08 ·
-              </time>
-              
-                <a href="https://ellensun815.github.io/tag/Ae2bnezm1" class="post-tags">
-                  # 小诗
-                </a>
-              
-            </div>
-            <div class="post-content">
-              <p>为什么文章显示的页面不对哦</p>
+          <h2 class="post-title">测试</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2019-03-08</span>
+            
+              <span>
+                <i class="icon-pricetags-outline"></i>
+                
+                  <a href="https://ellensun815.github.io/tag/Ae2bnezm1">
+                    小诗
+                    
+                  </a>
+                
+              </span>
+            
+          </div>
+          <div class="post-content">
+            <p>为什么文章显示的页面不对哦</p>
 
-            </div>
-          </article>
+          </div>
         </div>
-    
-        
-          <div class="next-post">
-            <div class="next">下一篇</div>
-            <a href="https://ellensun815.github.io/post/wu-li-de-si-xing">
-              <h3 class="post-title">
-                无力的死刑
-              </h3>
-            </a>
-          </div>  
-        
 
         
-    
-        <div class="site-footer">
+      </div>
+
+      
+
+      <div class="site-footer">
+  <div class="slogan"></div>
   🦁️
 </div>
 
-<script>
-  hljs.initHighlightingOnLoad()
+
+    </div>
+    <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
 </script>
 
-      </div>
-    </div>
+
+
+
   </body>
 </html>
