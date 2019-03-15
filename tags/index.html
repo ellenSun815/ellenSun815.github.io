@@ -1,79 +1,113 @@
+<!DOCTYPE html>
 <html>
   <head>
-  <meta charset="utf-8" />
-<meta name="description" content="" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>X Space</title>
+    <meta charset="utf-8" >
+
+<title>标签列表 | X Space</title>
+<meta name="description" content="">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
 <link rel="shortcut icon" href="https://ellensun815.github.io/favicon.ico">
 <link rel="stylesheet" href="https://ellensun815.github.io/styles/main.css">
 
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="https://cdn.bootcss.com/moment.js/2.23.0/moment.min.js"></script>
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
   </head>
   <body>
-    <div class="main">
-      <div class="main-content">
-        <div class="site-header">
-  <a href="https://ellensun815.github.io">
-  <img class="avatar" src="https://ellensun815.github.io/images/avatar.png" alt="" width="80px" height="80px">
-  </a>
-  <h1 class="site-title">
-    X Space
-  </h1>
-  <p class="site-description">
-    
-  </p>
-  <div class="menu-container">
-    
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://ellensun815.github.io">
+        <img src="https://ellensun815.github.io/images/avatar.png" class="site-logo">
+        <h1 class="site-title">X Space</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
       
-        <a href="https://ellensun815.github.io" class="menu">
-          首页
-        </a>
+        
+          <a href="https://ellensun815.github.io" class="site-nav">
+            首页
+          </a>
+        
       
-    
+        
+          <a href="https://ellensun815.github.io/archives" class="site-nav">
+            归档
+          </a>
+        
       
-        <a href="https://ellensun815.github.io/archives" class="menu">
-          归档
-        </a>
+        
+          <a href="https://ellensun815.github.io/tags" class="site-nav">
+            标签
+          </a>
+        
       
-    
+        
+          <a href="https://ellensun815.github.io/post/about/" class="site-nav">
+            关于
+          </a>
+        
       
-        <a href="https://ellensun815.github.io/tags" class="menu">
-          标签
-        </a>
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="site-description">
       
-    
-      
-        <a href="https://ellensun815.github.io/post/about/" class="menu">
-          关于
-        </a>
-      
-    
+    </div>
+    <div class="site-footer">
+      🦁️
+    </div>
   </div>
 </div>
 
 
-        <div class="tags-container">
-          
-            <a class="tag" href="https://ellensun815.github.io/tag/lvUrrQ3c2">忆</a>
-          
-            <a class="tag" href="https://ellensun815.github.io/tag/Ae2bnezm1">小诗</a>
-          
-            <a class="tag" href="https://ellensun815.github.io/tag/hvenotes">读书笔记</a>
-          
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <h2 class="tag-list-title">标签列表</h2>
+          <div class="tags-container">
+            
+              <a class="tag" href="https://ellensun815.github.io/tag/lvUrrQ3c2">忆</a>
+            
+              <a class="tag" href="https://ellensun815.github.io/tag/Ae2bnezm1">小诗</a>
+            
+              <a class="tag" href="https://ellensun815.github.io/tag/hvenotes">读书笔记</a>
+            
+          </div>
         </div>
-
-        <div class="site-footer">
-  🦁️
-</div>
-
-<script>
-  hljs.initHighlightingOnLoad()
-</script>
-
       </div>
     </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script type="application/javascript">
+
+AOS.init();
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
   </body>
 </html>
