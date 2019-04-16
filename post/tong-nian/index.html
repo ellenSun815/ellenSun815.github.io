@@ -7,130 +7,64 @@
 <meta name="description" content="">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="shortcut icon" href="https://ellensun815.github.io/favicon.ico?v=1555411342182">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
+<link rel="shortcut icon" href="https://ellensun815.github.io/favicon.ico?v=1555411395591">
 <link rel="stylesheet" href="https://ellensun815.github.io/styles/main.css">
 
 
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-81245764-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-81245764-2');
-</script>
 
 
   </head>
   <body>
-  
-    <nav class="navbar border fixed split-nav">
-  <div class="nav-brand">
-    <h3><a href="https://ellensun815.github.io">X Space</a></h3>
-  </div>
-  <div class="collapsible">
-    <input id="collapsible1" type="checkbox" name="collapsible1">
-    <button>
-      <label for="collapsible1">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </label>
-    </button>
-    <div class="collapsible-body">
-      <ul class="inline">
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://ellensun815.github.io">
+        <img src="https://ellensun815.github.io/images/avatar.png?v=1555411395591" class="site-logo">
+        <h1 class="site-title">X Space</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
         
-          <li>
-            
-              <a href="https://ellensun815.github.io" class="menu">
-                首页
-              </a>
-            
-          </li>
+          <a href="https://ellensun815.github.io" class="site-nav">
+            首页
+          </a>
         
-          <li>
-            
-              <a href="https://ellensun815.github.io/archives" class="menu">
-                归档
-              </a>
-            
-          </li>
+      
         
-          <li>
-            
-              <a href="https://ellensun815.github.io/tags" class="menu">
-                标签
-              </a>
-            
-          </li>
+          <a href="https://ellensun815.github.io/archives" class="site-nav">
+            归档
+          </a>
         
-          <li>
-            
-              <a href="https://ellensun815.github.io/post/about/" class="menu">
-                关于
-              </a>
-            
-          </li>
+      
         
-      </ul>
+          <a href="https://ellensun815.github.io/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="https://ellensun815.github.io/post/about/" class="site-nav">
+            关于
+          </a>
+        
+      
     </div>
   </div>
-</nav>
-
-    <div id="top" class="row site">
-      <div class="sm-12 md-8 col">
-        <div class="paper">
-          <article class="article">
-            <h1>童年</h1>
-            <p class="article-meta">
-              2019-02-01
-              
-                <a href="https://ellensun815.github.io/tag/lvUrrQ3c2" class="badge secondary">
-                  忆
-                </a>
-              
-            </p>
-            
-            <div class="post-content">
-              <p>X并非是一个喜欢热闹的孩子 从小就喜欢自己一个人待着 爸妈工作繁忙 于是把他一个人锁在家里 陪着他的 是一辆辆玩具小汽车 一把玩具手枪 还有几本书</p>
-<p>那时候X趴在地上 把小汽车一辆一辆的摆整齐 再在“嗖 嗖”的声音中 把一列列的小汽车发射出去 翻来覆去 一下午的时间也就溜走了</p>
-<p>玩具手枪的弹夹可以装上塑料小珠 模拟子弹 可是那时的X实在太小了 连给手枪上膛的力气都没有 所以 他从没成功地扣动扳机 一次都没</p>
-<p>差点忘了弹珠 童年怎么能少了弹珠 一群胡同里的小孩 趴在地上 弹弹珠 然后再满身泥土 脏兮兮的回家去</p>
-<p>X一直都喜欢和比自己大的孩子玩 尤其是喜欢和大姐姐玩 也不知道是喜欢玩 还是喜欢大姐姐</p>
-<p>六岁那年 胡同拆迁 X一家搬进了楼房 于是 小汽车 玩具枪 弹珠 还有大姐姐 一同被留在了老胡同里</p>
-
-            </div>
-          </article>
-        </div>
-        <div class="paper" data-aos="fade-in">
-          
-            <div class="next-post">
-              <div class="next">
-                下一篇
-              </div>
-              <a href="https://ellensun815.github.io/post/mao">
-                <h3 class="post-title">
-                  猫
-                </h3>
-              </a>
-            </div>
-          
-        </div>
-        
-      </div>
-
-      <div class="sm-12 md-4 col sidebar">
-  <div class="paper info-container">
-    <img src="https://ellensun815.github.io/images/avatar.png?v=1555411342182" class="no-responsive avatar">
-    <div class="text-muted"></div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
     <div class="social-container">
       
         
@@ -144,85 +78,57 @@
         
       
     </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      最新文章
-    </div>
-    <div class="row">
-      <ul>
-        
-          
-            <li>
-              <a href="https://ellensun815.github.io/post/ce-shi">测试</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://ellensun815.github.io/post/about">About</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://ellensun815.github.io/post/tong-nian">童年</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://ellensun815.github.io/post/mao">猫</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://ellensun815.github.io/post/bi-yu">比喻</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://ellensun815.github.io/post/ta">她</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://ellensun815.github.io/post/wu-li-de-si-xing">无力的死刑</a>
-            </li>
-          
-        
-      </ul>
-    </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      标签列表
-    </div>
-    <div class="row">
-      
-        <a href="https://ellensun815.github.io/tag/lvUrrQ3c2" class="badge secondary">
-          忆
-        </a>
-      
-        <a href="https://ellensun815.github.io/tag/Ae2bnezm1" class="badge secondary">
-          小诗
-        </a>
-      
-        <a href="https://ellensun815.github.io/tag/hvenotes" class="badge secondary">
-          读书笔记
-        </a>
+    <div class="site-description">
       
     </div>
-  </div>
-  <div class="paper">
-    🦁️
+    <div class="site-footer">
+      🦁️
+    </div>
   </div>
 </div>
 
 
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">童年</h2>
+            <div class="post-date">2019-02-01</div>
+            
+            <div class="post-content">
+              <p>X并非是一个喜欢热闹的孩子 从小就喜欢自己一个人待着 爸妈工作繁忙 于是把他一个人锁在家里 陪着他的 是一辆辆玩具小汽车 一把玩具手枪 还有几本书</p>
+<p>那时候X趴在地上 把小汽车一辆一辆的摆整齐 再在“嗖 嗖”的声音中 把一列列的小汽车发射出去 翻来覆去 一下午的时间也就溜走了</p>
+<p>玩具手枪的弹夹可以装上塑料小珠 模拟子弹 可是那时的X实在太小了 连给手枪上膛的力气都没有 所以 他从没成功地扣动扳机 一次都没</p>
+<p>差点忘了弹珠 童年怎么能少了弹珠 一群胡同里的小孩 趴在地上 弹弹珠 然后再满身泥土 脏兮兮的回家去</p>
+<p>X一直都喜欢和比自己大的孩子玩 尤其是喜欢和大姐姐玩 也不知道是喜欢玩 还是喜欢大姐姐</p>
+<p>六岁那年 胡同拆迁 X一家搬进了楼房 于是 小汽车 玩具枪 弹珠 还有大姐姐 一同被留在了老胡同里</p>
+
+            </div>
+            
+              <div class="tag-container">
+                
+                  <a href="https://ellensun815.github.io/tag/lvUrrQ3c2" class="tag">
+                    忆
+                  </a>
+                
+              </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://ellensun815.github.io/post/mao">
+                  <h3 class="post-title">
+                    猫
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
     </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -232,6 +138,13 @@
 AOS.init();
 
 hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
 </script>
 

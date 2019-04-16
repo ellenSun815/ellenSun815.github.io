@@ -7,97 +7,92 @@
 <meta name="description" content="">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="shortcut icon" href="https://ellensun815.github.io/favicon.ico?v=1555411342182">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
+<link rel="shortcut icon" href="https://ellensun815.github.io/favicon.ico?v=1555411395591">
 <link rel="stylesheet" href="https://ellensun815.github.io/styles/main.css">
 
 
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-81245764-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-81245764-2');
-</script>
 
 
   </head>
   <body>
-  
-    <nav class="navbar border fixed split-nav">
-  <div class="nav-brand">
-    <h3><a href="https://ellensun815.github.io">X Space</a></h3>
-  </div>
-  <div class="collapsible">
-    <input id="collapsible1" type="checkbox" name="collapsible1">
-    <button>
-      <label for="collapsible1">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </label>
-    </button>
-    <div class="collapsible-body">
-      <ul class="inline">
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://ellensun815.github.io">
+        <img src="https://ellensun815.github.io/images/avatar.png?v=1555411395591" class="site-logo">
+        <h1 class="site-title">X Space</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
         
-          <li>
-            
-              <a href="https://ellensun815.github.io" class="menu">
-                首页
-              </a>
-            
-          </li>
+          <a href="https://ellensun815.github.io" class="site-nav">
+            首页
+          </a>
         
-          <li>
-            
-              <a href="https://ellensun815.github.io/archives" class="menu">
-                归档
-              </a>
-            
-          </li>
+      
         
-          <li>
-            
-              <a href="https://ellensun815.github.io/tags" class="menu">
-                标签
-              </a>
-            
-          </li>
+          <a href="https://ellensun815.github.io/archives" class="site-nav">
+            归档
+          </a>
         
-          <li>
-            
-              <a href="https://ellensun815.github.io/post/about/" class="menu">
-                关于
-              </a>
-            
-          </li>
+      
         
-      </ul>
+          <a href="https://ellensun815.github.io/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="https://ellensun815.github.io/post/about/" class="site-nav">
+            关于
+          </a>
+        
+      
     </div>
   </div>
-</nav>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      
+    </div>
+    <div class="site-footer">
+      🦁️
+    </div>
+  </div>
+</div>
 
-    <div id="top" class="row site">
-      <div class="sm-12 md-8 col">
-        <div class="paper">
-          <article class="article">
-            <h1>无力的死刑</h1>
-            <p class="article-meta">
-              2016-07-19
-              
-                <a href="https://ellensun815.github.io/tag/hvenotes" class="badge success">
-                  读书笔记
-                </a>
-              
-            </p>
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">无力的死刑</h2>
+            <div class="post-date">2016-07-19</div>
             
             <div class="post-content">
               <p>最近在读东野圭吾先生的《虚无的十字架》一书 书中 中原正道及滨冈小夜子的爱女遭入室抢劫犯所杀害 凶手是刚假释出狱没多久的蛭川 蛭川因出狱后再染赌博恶习 囊中羞涩 遂起抢劫之心 某天 在滨冈小夜子把女儿爱美独自留在家 自己出门买菜时 蛭川入室抢劫 因为怕被爱美记住自己的长相 便把爱美残忍的掐死了~<!--more-->~ 中原正道和滨冈悲痛欲绝 发誓一定要将凶手绳之以法并处以死刑 只有死刑 好像才能抚平内心的痛苦 怎料 一审时 因凶手的辩护律师的巧舌 审判结果竟是无期徒刑 中原夫妇不服 进行上诉 并在二次审判开庭前 抱定决心 若判罚还不是死刑 夫妻二人将一起自焚…… 结果 二审改判 凶手将处以死刑 这看似是对爱美的死所能做出的最好的补偿</p>
@@ -128,110 +123,23 @@
 <p>“也许这代表人终究无法做出完美的审判。”</p>
 
             </div>
-          </article>
+            
+              <div class="tag-container">
+                
+                  <a href="https://ellensun815.github.io/tag/hvenotes" class="tag">
+                    读书笔记
+                  </a>
+                
+              </div>
+            
+            
+
+            
+
+          </div>
+
         </div>
-        <div class="paper" data-aos="fade-in">
-          
-        </div>
-        
       </div>
-
-      <div class="sm-12 md-4 col sidebar">
-  <div class="paper info-container">
-    <img src="https://ellensun815.github.io/images/avatar.png?v=1555411342182" class="no-responsive avatar">
-    <div class="text-muted"></div>
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      最新文章
-    </div>
-    <div class="row">
-      <ul>
-        
-          
-            <li>
-              <a href="https://ellensun815.github.io/post/ce-shi">测试</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://ellensun815.github.io/post/about">About</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://ellensun815.github.io/post/tong-nian">童年</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://ellensun815.github.io/post/mao">猫</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://ellensun815.github.io/post/bi-yu">比喻</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://ellensun815.github.io/post/ta">她</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://ellensun815.github.io/post/wu-li-de-si-xing">无力的死刑</a>
-            </li>
-          
-        
-      </ul>
-    </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      标签列表
-    </div>
-    <div class="row">
-      
-        <a href="https://ellensun815.github.io/tag/lvUrrQ3c2" class="badge success">
-          忆
-        </a>
-      
-        <a href="https://ellensun815.github.io/tag/Ae2bnezm1" class="badge warning">
-          小诗
-        </a>
-      
-        <a href="https://ellensun815.github.io/tag/hvenotes" class="badge secondary">
-          读书笔记
-        </a>
-      
-    </div>
-  </div>
-  <div class="paper">
-    🦁️
-  </div>
-</div>
-
-
     </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -241,6 +149,13 @@
 AOS.init();
 
 hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
 
 </script>
 
